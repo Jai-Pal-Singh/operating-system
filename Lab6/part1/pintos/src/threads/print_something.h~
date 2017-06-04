@@ -1,0 +1,6 @@
+#ifndef THREAD_HELLO
+#define THREAD_HELLO
+void test_print_something();
+void test_sort();
+#endif
+

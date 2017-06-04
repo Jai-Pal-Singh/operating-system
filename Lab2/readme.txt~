@@ -1,0 +1,3 @@
+my code works fine for cd command. It runs the started programs in foreground and background gracefully. 
+There is some kind of problem with exit or control+d. For some preceding programs it runs fine and terminates the toy shell when encountered. But for some commands, we have to exit as many times the command is called.  
+

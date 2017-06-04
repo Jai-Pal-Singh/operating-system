@@ -1,0 +1,7 @@
+3.a
+	root owns  this (/usr/bin/passwd ) file.
+	
+3.b So when non root user tries to change the password by using passwd it changed his own password because
+    internally passwd checks the RUID and, if it is not root, its actions will be limited to real user's password.
+    RUID is the Real User ID and it never (almost) changes.
+    EUID is the Effective User ID, it changes for processes (not for the user).

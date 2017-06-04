@@ -1,0 +1,14 @@
+jaipal@jaipal:~/Desktop$ gcc peterson_sol.c 
+jaipal@jaipal:~/Desktop$ ./a.out
+pid 0 in critical section
+pid 1 in critical section
+pid 0 in critical section
+pid 1 in critical section
+pid 0 in critical section
+pid 1 in critical section
+pid 0 in critical section
+pid 1 in critical section
+pid 0 in critical section
+pid 1 in critical section
+pid 0 in critical section
+pid 1 in critical section

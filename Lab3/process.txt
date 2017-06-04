@@ -1,0 +1,36 @@
+
+2.a
+    fork.c 
+    location : (/linux-4.9.5/kernel/fork.c)
+	command used : find . -name fork.c
+
+	sys_fork()
+	location : (/linux-4.9.5/arch/m68k/kernel/entery.S)
+	command used :  grep -r sys_fork
+
+	do_fork()
+	location : (/linux-4.9.5/kernel/fork.c)
+	command used :  grep -r do_fork
+
+2.b Location : linux-4.9.5/include/linux/sched.h
+	
+	Command : grep -r ^'struct task_struct' include/
+  	It contains all the information that the kernel has about a process. 
+  	Each task_struct data structures describes a process or task in the system.
+	
+2.c
+	Command to list all makes in linux source tree-
+	tree -I "makefile"
+
+2.d
+	jiffies.c is located at /linux-4.9.5/kernel/time/jiffies.c
+	jiffies.h is located at /linux-4.9.5/include/linux/jiffies.h
+	Command used to find jiffies is: locate jiffies 
+	The global variable jiffies holds the number of ticks that have occurred since the system booted. On boot, the kernel initializes the variable to zero, and it is incremented by one during each timer interrupt. Thus, because there are HZ timer interrupts in a second, there are HZ jiffies in a second. 
+	The jiffies variable is declared in <linux/jiffies.h> as
+	extern unsigned long volatile jiffies;
+	
+	A second variable is also defined in <linux/jiffies.h>:
+extern u64 jiffies_64;
+jiffies = jiffies_64;
+

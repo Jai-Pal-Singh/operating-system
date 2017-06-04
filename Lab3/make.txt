@@ -1,0 +1,21 @@
+1.a
+    The dependencies are resolved by giving the dependent filename before the `:` and source after it.
+
+1.b
+	$< - $< is the first item in the dependencies list
+	$@ - $@ says to put the output of the compilation in the file named on the left side of the :
+	$^ - $@ says to put the output of the compilation in the file named on the right side of the :
+	
+1.c
+	There are some ways to build the code when you have more than one makefiles in a directory. They are listed below-
+	a) You can rename the makefiles sensibly like makefile.win, makefile.ni etc and use them as
+	make -f makefile.win
+	make -f makefile.nix
+	
+	b) You can have a makefile that contains-
+	win: make -f makefile.win
+	nix: make -f makefile.nix
+	and use make win or make nix
+
+1.d 
+   Dependencies in the make file are :- square_root.c and square_root.h

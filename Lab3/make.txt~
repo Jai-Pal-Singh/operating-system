@@ -1,0 +1,7 @@
+1.a
+
+
+1.b
+	$< - $< is the first item in the dependencies list
+	$@ - $@ says to put the output of the compilation in the file named on the left side of the :
+	$^ - $@ says to put the output of the compilation in the file named on the right side of the :
